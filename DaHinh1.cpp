@@ -9,17 +9,18 @@ public:
 };
 
 class Cat: public Animal{
-    virtual void speak() {
+    virtual void speak() {  // virtual chỗ này là không bắt buộc
         cout << "Meo Meo Meo Meo Meo" << endl;
     }
 };
 
 class Dog: public Animal {
-    virtual void speak() {
+    virtual void speak() { // virtual chỗ này là không bắt buộc
         cout << "Gau Gau Gau" << endl;
     }
 };
 
+// Chỉ cần xây 1 hàm Speak cho tất cả các lớp con của Animal, quá tiện lợi
 void speak(Animal& a) {
     a.speak();
 }
