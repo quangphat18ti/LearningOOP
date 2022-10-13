@@ -9,13 +9,13 @@ public:
 };
 
 class Cat: public Animal{
-    void speak() {
+    virtual void speak() {
         cout << "Meo Meo Meo Meo Meo" << endl;
     }
 };
 
 class Dog: public Animal {
-    void speak() {
+    virtual void speak() {
         cout << "Gau Gau Gau" << endl;
     }
 };
