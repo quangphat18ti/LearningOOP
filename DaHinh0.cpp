@@ -20,7 +20,7 @@ class Dog: public Animal {
     }
 };
 
-void speak(Animal a) {
+void speakAnimal(Animal a) {
     a.speak();
 }
 
@@ -29,7 +29,7 @@ int main(){
     Cat cat;
     Dog dog;
 
-    speak(animal);  // Animal is speaking...
-    speak(cat);     // Animal is speaking...
-    speak(dog);     // Animal is speaking...
+    speakAnimal(animal);  // Animal is speaking...
+    speakAnimal(cat);     // Animal is speaking...
+    speakAnimal(dog);     // Animal is speaking...
 }
